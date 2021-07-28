@@ -2,7 +2,6 @@ import './imageService';
 import ImageApiService from './imageService';
 import imageCardTpl from '../templates/photo-card.hbs';
 import Notiflix from 'notiflix';
-// import './lightbox';
 import SimpleLightbox from 'simplelightbox';
 import '../../node_modules/simplelightbox/dist/simple-lightbox.css';
 let lightbox = new SimpleLightbox('.gallery a');
@@ -34,7 +33,6 @@ async function onSearch(e) {
   try {
     const res = await imageApiService.fetchImages();
 
-    console.log(res);
     appendImageMarkup(res.hits);
 
     if (res.hits.length === 0) {
@@ -65,7 +63,6 @@ async function onLoadMore() {
       appendImageMarkup(res.hits);
     }
     lightbox.refresh();
-    console.log(lightbox.refresh());
   } catch (error) {
     console.log(error);
   }
