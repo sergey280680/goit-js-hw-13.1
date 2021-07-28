@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(193, 247, 191);
+}
+
+button {
+  cursor: pointer;
+}
+
+.search-form {
+  background-color: rgb(159, 139, 250);
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px -6px 20px 0px;
+}
+
+.load-more {
+  display: block;
+  margin: 30px auto;
+}
+
+.gallery {
+  display: flex;
+  justify-content: flex-start;
+  // justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.photo-card {
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 5px 6px 15px 2px rgb(122 122 122 / 50%);
+}
+
+.thumb {
+  overflow: hidden;
+  height: 200px;
+  width: 300px;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+
+  // justify-content: center;
+  flex-direction: column;
+}
+
+.is-hidden {
+  display: none;
+}
